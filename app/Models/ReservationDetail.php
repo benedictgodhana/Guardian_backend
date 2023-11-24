@@ -8,11 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class ReservationDetail extends Model
 {
     use HasFactory;
+
+    protected $table = 'app_open_bookings';
     protected $fillable = [
-        'bus_reg_no',
-        'destination',
-        'departure_time',
+        'reg_number',
+        'route_name',
+        'bus_name',
+        'departure_name',
         'arrival_time',
-        'status',
+        'status_name'
     ];
 }
